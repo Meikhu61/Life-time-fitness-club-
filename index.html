@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Lifetime Fitness Club | Luxury Gym &amp; Training Studio — Malviya Nagar, Jaipur</title>
+  <meta name="description" content="Lifetime Fitness Club in Malviya Nagar, Jaipur (Opp. Gaurav Tower Marg). Rated 4.9 stars across 755 Google reviews. Where You Come First... Forever." />
+  <meta name="theme-color" content="#05070a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-black: #05070a;
+      --bg-charcoal: #0b0f17;
+      --bg-card: #111723;
+      --bg-card-hover: #161e2e;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-blue: rgba(31, 194, 255, 0.35);
+      --electric-blue: #1fc2ff;
+      --electric-blue-bright: #4cd2ff;
+      --electric-blue-deep: #0088cc;
+      --electric-glow: rgba(31, 194, 255, 0.25);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --gold: #fbbf24;
+      --success: #10b981;
+      --font-display: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+      --container: 1240px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+      background-color: var(--bg-black);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: clip;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-black);
+      color: var(--text-primary);
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img, svg, iframe {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding-left: max(20px, env(safe-area-inset-left));
+      padding-right: max(20px, env(safe-area-inset-right));
+    }
+
+    .section {
+      padding: clamp(64px, 8vw, 108px) 0;
+      position: relative;
+    }
+
+    .section-dark {
+      background-color: var(--bg-black);
+    }
+
+    .section-charcoal {
+      background-color: var(--bg-charcoal);
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: clamp(34px, 5vw, 56px);
+    }
+
+    .section-header.centered {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: clamp(0.7rem, 1.4vw, 0.78rem);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--electric-blue);
+      margin-bottom: 12px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--electric-blue), transparent);
+      flex-shrink: 0;
+    }
+
+    .section-header.centered .eyebrow::after {
+      content: "";
+      width: 22px;
+      height: 2px;
+      background: linear-gradient(270deg, var(--electric-blue), transparent);
+      flex-shrink: 0;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      overflow-wrap: break-word;
+    }
+
+    .section-title {
+      font-size: clamp(1.75rem, 3.8vw, 3rem);
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .section-title span {
+      color: var(--electric-blue);
+    }
+
+    .section-subtitle {
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Buttons (Minimum 44px touch target) */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 13px 26px;
+      border-radius: 50px;
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: var(--transition);
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--electric-blue), var(--electric-blue-deep));
+      color: #030712;
+      box-shadow: 0 10px 30px -8px var(--electric-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, var(--electric-blue-bright), var(--electric-blue));
+      box-shadow: 0 16px 36px -6px rgba(31, 194, 255, 0.48);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-primary);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--electric-blue);
+      color: var(--electric-blue);
+      background: rgba(31, 194, 255, 0.08);
+      transform: translateY(-2px);
+    }
+
+    /* Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: calc(14px + env(safe-area-inset-top)) 0 14px;
+      transition: var(--transition);
+      border-bottom: 1px solid transparent;
+    }
+
+    .navbar.scrolled {
+      padding: calc(10px + env(safe-area-inset-top)) 0 10px;
+      background: rgba(5, 7, 10, 0.9);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      flex-shrink: 1;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #121a28, #070a10);
+      border: 1px solid var(--border-blue);
+      border-radius: 11px;
+      box-shadow: 0 0 20px rgba(31, 194, 255, 0.16);
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+      min-width: 0;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 900;
+      font-size: clamp(0.86rem, 2.2vw, 1.08rem);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-title .blue {
+      color: var(--electric-blue);
+    }
+
+    .brand-title .white {
+      color: var(--text-primary);
+    }
+
+    .brand-tagline {
+      font-size: clamp(0.5rem, 1.2vw, 0.58rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-top: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-tagline span {
+      color: var(--electric-blue);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(16px, 2vw, 28px);
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.25s ease;
+      position: relative;
+      padding: 8px 0;
+      white-space: nowrap;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--electric-blue);
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-primary);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .nav-btn {
+      min-height: 40px;
+      padding: 10px 20px;
+      font-size: 0.76rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.04);
+      flex-shrink: 0;
+    }
+
+    .hamburger span {
+      width: 20px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Mobile Drawer */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: min(340px, 86vw);
+      height: 100dvh;
+      background: #080b11;
+      border-left: 1px solid var(--border-subtle);
+      z-index: 999;
+      padding: calc(84px + env(safe-area-inset-top)) 24px max(28px, env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+      overflow-y: auto;
+      transition: right 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: -20px 0 60px rgba(0, 0, 0, 0.8);
+    }
+
+    .mobile-menu.open {
+      right: 0;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .mobile-nav-list a {
+      display: flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 10px 14px;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+
+    .mobile-nav-list a:hover {
+      background: rgba(31, 194, 255, 0.08);
+      color: var(--electric-blue);
+    }
+
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      backdrop-filter: blur(4px);
+      z-index: 998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* 1. Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding: clamp(110px, 14vh, 148px) 0 clamp(60px, 8vh, 92px);
+      overflow: hidden;
+      background: radial-gradient(circle at 75% 25%, rgba(31, 194, 255, 0.14), transparent 45%), #05070a;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.38;
+      filter: contrast(1.12) saturate(0.75);
+      transform: scale(1.03);
+    }
+
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, #05070a 18%, rgba(5, 7, 10, 0.84) 55%, rgba(5, 7, 10, 0.58) 100%),
+                  linear-gradient(180deg, rgba(5, 7, 10, 0.78) 0%, transparent 25%, #05070a 100%);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+      gap: clamp(28px, 4vw, 48px);
+      align-items: end;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 10px;
+      padding: 8px 14px;
+      border-radius: 50px;
+      background: rgba(17, 23, 35, 0.85);
+      border: 1px solid var(--border-blue);
+      backdrop-filter: blur(10px);
+      margin-bottom: 22px;
+      font-size: clamp(0.74rem, 1.8vw, 0.82rem);
+      font-weight: 600;
+      color: var(--text-primary);
+      max-width: 100%;
+    }
+
+    .hero-badge .stars {
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    .hero-badge .divider {
+      width: 1px;
+      height: 14px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-title {
+      font-size: clamp(2.15rem, 5.5vw, 4.6rem);
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero-title .accent {
+      display: block;
+      background: linear-gradient(90deg, var(--electric-blue-bright), var(--electric-blue), #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead {
+      font-size: clamp(0.98rem, 1.8vw, 1.12rem);
+      color: #cbd5e1;
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .hero-meta-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(31, 194, 255, 0.1);
+      border: 1px solid var(--border-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--electric-blue);
+      flex-shrink: 0;
+    }
+
+    .hero-meta-text strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+
+    .hero-meta-text span {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* Hero Floating Glass Card */
+    .hero-card {
+      background: rgba(17, 23, 35, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-lg);
+      padding: clamp(22px, 3vw, 28px);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.65);
+    }
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-card-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--electric-blue);
+    }
+
+    .rating-big {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .rating-big strong {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 4vw, 3rem);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--text-primary);
+    }
+
+    .rating-big span {
+      color: var(--gold);
+      font-size: 1.15rem;
+    }
+
+    .hero-card p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+    }
+
+    .hero-card-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mini-stat {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      color: var(--electric-blue);
+    }
+
+    .mini-stat span {
+      font-size: 0.74rem;
+      color: var(--text-secondary);
+    }
+
+    /* 2. About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+      gap: clamp(32px, 5vw, 64px);
+      align-items: center;
+    }
+
+    .about-media {
+      position: relative;
+    }
+
+    .about-img-main {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      aspect-ratio: 4 / 5;
+      background: var(--bg-card);
+      position: relative;
+    }
+
+    .about-img-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .about-media:hover .about-img-main img {
+      transform: scale(1.04);
+    }
+
+    .about-floating-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -16px;
+      background: linear-gradient(145deg, #131b29, #090d14);
+      border: 1px solid var(--border-blue);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.7);
+      max-width: 260px;
+    }
+
+    .about-floating-badge strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--electric-blue);
+      margin-bottom: 4px;
+    }
+
+    .about-floating-badge span {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .about-content p {
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      font-size: clamp(0.95rem, 1.4vw, 1.02rem);
+      line-height: 1.75;
+    }
+
+    .about-pillars {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 26px 0 32px;
+    }
+
+    .pillar-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--border-subtle);
+      min-width: 0;
+    }
+
+    .pillar-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(31, 194, 255, 0.14);
+      color: var(--electric-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .pillar-item strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .pillar-item span {
+      font-size: 0.79rem;
+      color: var(--text-secondary);
+    }
+
+    /* 3. Facilities & Training Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: clamp(24px, 3vw, 32px) clamp(20px, 2.5vw, 28px);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--electric-blue), transparent);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      background: var(--bg-card-hover);
+      border-color: var(--border-blue);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(31, 194, 255, 0.1);
+      border: 1px solid rgba(31, 194, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--electric-blue);
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--electric-blue);
+      color: #030712;
+      box-shadow: 0 0 25px var(--electric-glow);
+    }
+
+    .service-card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+
+    .service-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .service-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* 4. Membership Plans */
+    .demo-notice {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 50px;
+      background: rgba(31, 194, 255, 0.08);
+      border: 1px solid var(--border-blue);
+      color: var(--electric-blue-bright);
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .plan-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: clamp(26px, 3vw, 36px) clamp(22px, 2.5vw, 30px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: var(--transition);
+      min-width: 0;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .plan-card.featured {
+      background: linear-gradient(180deg, rgba(31, 194, 255, 0.09) 0%, var(--bg-card) 45%);
+      border: 1px solid var(--electric-blue);
+      box-shadow: 0 25px 60px -15px rgba(31, 194, 255, 0.22);
+    }
+
+    .plan-badge {
+      position: absolute;
+      top: -13px;
+      right: 22px;
+      background: linear-gradient(135deg, var(--electric-blue), var(--electric-blue-deep));
+      color: #030712;
+      font-family: var(--font-display);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 50px;
+    }
+
+    .plan-demo-pill {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--electric-blue);
+      background: rgba(31, 194, 255, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+    }
+
+    .plan-name {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .plan-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 22px;
+    }
+
+    .plan-price {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding-bottom: 22px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .plan-price .currency {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--electric-blue);
+    }
+
+    .plan-price .amount {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 3.5vw, 2.7rem);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .plan-price .period {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+    }
+
+    .plan-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+
+    .plan-features li svg {
+      color: var(--electric-blue);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* 5. Photo Gallery */
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 34px;
+    }
+
+    .filter-btn {
+      min-height: 40px;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--electric-blue);
+      color: #030712;
+      border-color: var(--electric-blue);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+    }
+
+    .gallery-item.hidden {
+      display: none;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 35%, rgba(5, 7, 10, 0.92) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 18px;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-overlay,
+    .gallery-item:focus-visible .gallery-overlay {
+      opacity: 1;
+    }
+
+    @media (hover: none) {
+      .gallery-overlay {
+        opacity: 1;
+        background: linear-gradient(180deg, transparent 48%, rgba(5, 7, 10, 0.9) 100%);
+      }
+    }
+
+    .gallery-overlay span {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--electric-blue);
+    }
+
+    .gallery-overlay h4 {
+      font-size: 1rem;
+      color: var(--text-primary);
+      margin-top: 4px;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 5, 9, 0.94);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 960px;
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .lightbox-content img {
+      width: 100%;
+      max-height: 68dvh;
+      object-fit: cover;
+    }
+
+    .lightbox-caption {
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(5, 7, 10, 0.85);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    .lightbox-close:hover {
+      background: var(--electric-blue);
+      color: #030712;
+    }
+
+    /* 6. Why Choose Us */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .why-card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 28px 22px;
+      transition: var(--transition);
+      min-width: 0;
+    }
+
+    .why-card:hover {
+      border-color: var(--border-blue);
+      transform: translateY(-4px);
+    }
+
+    .why-number {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: rgba(31, 194, 255, 0.25);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .why-card:hover .why-number {
+      color: var(--electric-blue);
+    }
+
+    .why-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* 7. Google Rating & Reviews */
+    .reviews-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
+      gap: 32px;
+      align-items: start;
+    }
+
+    .google-summary-card {
+      background: linear-gradient(145deg, #131b29, #0b1018);
+      border: 1px solid var(--border-blue);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 3vw, 34px) clamp(20px, 2.5vw, 28px);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .google-brand-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .google-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.06);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .score-display {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .score-num {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--text-primary);
+    }
+
+    .score-stars {
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+
+    .score-count {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+    }
+
+    .rating-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .rating-bar-row {
+      display: grid;
+      grid-template-columns: 36px 1fr 40px;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    .bar-track {
+      height: 7px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--electric-blue), var(--electric-blue-bright));
+      border-radius: 99px;
+    }
+
+    .reviews-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: var(--transition);
+      min-width: 0;
+    }
+
+    .review-card:hover {
+      border-color: var(--border-blue);
+      transform: translateY(-4px);
+    }
+
+    .review-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .review-stars {
+      color: var(--gold);
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+    }
+
+    .review-sample-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--electric-blue);
+      background: rgba(31, 194, 255, 0.1);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .review-card h4 {
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+    }
+
+    .review-card p {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .review-footer {
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    /* 8. Contact & Maps Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .contact-form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 3vw, 38px) clamp(20px, 3vw, 34px);
+      min-width: 0;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+      min-width: 0;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+
+    .form-control {
+      width: 100%;
+      min-height: 46px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: rgba(5, 7, 10, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--electric-blue);
+      box-shadow: 0 0 0 3px rgba(31, 194, 255, 0.16);
+    }
+
+    textarea.form-control {
+      min-height: 112px;
+      resize: vertical;
+    }
+
+    .form-feedback {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #a7f3d0;
+      font-size: 0.9rem;
+    }
+
+    .form-feedback.show {
+      display: block;
+    }
+
+    .location-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    .location-info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: clamp(20px, 2.5vw, 28px);
+    }
+
+    .info-row {
+      display: flex;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .info-row:first-child {
+      padding-top: 0;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(31, 194, 255, 0.1);
+      color: var(--electric-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-row strong {
+      display: block;
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+    }
+
+    .info-row p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    .map-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-card);
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: clamp(240px, 34vw, 320px);
+      flex: 1;
+      border: 0;
+      filter: grayscale(25%) invert(92%) contrast(92%) hue-rotate(180deg);
+    }
+
+    .map-footer-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 18px;
+      background: rgba(11, 15, 23, 0.95);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .map-footer-bar span {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    /* Footer */
+    .footer {
+      background: #030407;
+      border-top: 1px solid var(--border-subtle);
+      padding: clamp(52px, 6vw, 72px) 0 max(28px, env(safe-area-inset-bottom));
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr);
+      gap: clamp(24px, 3.5vw, 40px);
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .footer-brand p {
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      max-width: 340px;
+      line-height: 1.7;
+    }
+
+    .footer h4 {
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-links a {
+      display: inline-block;
+      padding: 4px 0;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      transition: color 0.25s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--electric-blue);
+    }
+
+    .footer-address {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Tablet & Small Desktop (<= 1080px) */
+    @media (max-width: 1080px) {
+      .hero-grid,
+      .about-grid,
+      .reviews-layout,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-floating-badge {
+        right: 16px;
+        bottom: 16px;
+      }
+
+      .services-grid,
+      .plans-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* Tablet Portrait & Mobile Navigation Breakpoint (<= 900px) */
+    @media (max-width: 900px) {
+      .nav-links,
+      .nav-cta .nav-btn {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .reviews-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Mobile Landscape / Short Viewports */
+    @media (max-height: 540px) and (orientation: landscape) {
+      .hero {
+        min-height: auto;
+        padding-top: 96px;
+        padding-bottom: 48px;
+      }
+    }
+
+    /* Mobile Phones (<= 640px) */
+    @media (max-width: 640px) {
+      .services-grid,
+      .plans-grid,
+      .why-grid,
+      .gallery-grid,
+      .about-pillars,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-img-main {
+        aspect-ratio: 4 / 3;
+      }
+
+      .about-floating-badge {
+        position: static;
+        margin-top: 14px;
+        max-width: 100%;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .map-footer-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .map-footer-bar .btn {
+        width: 100%;
+      }
+    }
+
+    /* Extra Small Phones (<= 380px) */
+    @media (max-width: 380px) {
+      .container {
+        padding-left: max(14px, env(safe-area-inset-left));
+        padding-right: max(14px, env(safe-area-inset-right));
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+      }
+
+      .hero-card-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand-logo" aria-label="Lifetime Fitness Club Home">
+        <div class="brand-mark">
+          <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="17" cy="21" r="11" stroke="#f8fafc" stroke-width="2.2" stroke-dasharray="44 18"/>
+            <path d="M17 10V6M14 6H20M25 13L27.5 10.5" stroke="#1fc2ff" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M17 21V15.5M17 21H21.5" stroke="#1fc2ff" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="30" cy="14" r="2.2" fill="#1fc2ff"/>
+            <path d="M29.5 17.5L26 22L30 25L27.5 32M29.5 17.5L34 20.5M29.5 17.5L25 19" stroke="#1fc2ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title"><span class="blue">LIFETIME</span> <span class="white">FITNESS CLUB</span></div>
+          <div class="brand-tagline"><span>WHERE YOU COME FIRST...</span> FOREVER</div>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#plans">Memberships</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary nav-btn">Book Free Visit</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Club</a></li>
+      <li><a href="#facilities">Facilities &amp; Services</a></li>
+      <li><a href="#plans">Membership Plans</a></li>
+      <li><a href="#gallery">Photo Gallery</a></li>
+      <li><a href="#why-us">Why Choose Us</a></li>
+      <li><a href="#reviews">Google Reviews (4.9★)</a></li>
+      <li><a href="#contact">Contact &amp; Directions</a></li>
+    </ul>
+    <div>
+      <a href="#contact" class="btn btn-primary" style="width: 100%;" id="mobileCtaBtn">Enquire Now</a>
+    </div>
+  </aside>
+
+  <!-- 1. Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=85" alt="Lifetime Fitness Club luxury gym floor" />
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="stars">★★★★★</span>
+          <strong>4.9 Google Rating</strong>
+          <span class="divider"></span>
+          <span>755 Verified Reviews · Jaipur</span>
+        </div>
+
+        <h1 class="hero-title">
+          Elevate Your Strength.
+          <span class="accent">Own Every Rep.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Welcome to <strong>Lifetime Fitness Club</strong> — Malviya Nagar’s premier training destination. Built around precision equipment, expert coaching, and a relentless commitment to our promise: <em>Where You Come First... Forever.</em>
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Schedule a Club Tour
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#plans" class="btn btn-outline">View Membership Plans</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="hero-meta-text">
+              <strong>3rd Floor, V Cube</strong>
+              <span>Opp. Gaurav Tower Marg, Malviya Nagar</span>
+            </div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="hero-meta-text">
+              <strong>Top Rated in Jaipur</strong>
+              <span>4.9 / 5.0 Across 755 Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-card-header">
+          <span class="hero-card-tag">Verified Google Reputation</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1fc2ff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="rating-big">
+          <strong>4.9</strong>
+          <span>★★★★★</span>
+        </div>
+        <p>Recognized by <strong>755+ members &amp; visitors</strong> on Google for training standards, equipment quality, and supportive atmosphere.</p>
+        <div class="hero-card-stats">
+          <div class="mini-stat">
+            <strong>Malviya Nagar</strong>
+            <span>Prime V Cube Address</span>
+          </div>
+          <div class="mini-stat">
+            <strong>Pro Zones</strong>
+            <span>Strength · Cardio · Turf</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. About Section -->
+  <section class="section section-charcoal" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1000&q=80" alt="Athlete training at Lifetime Fitness Club" loading="lazy" />
+        </div>
+        <div class="about-floating-badge">
+          <strong>4.9★ · 755 Reviews</strong>
+          <span>Trusted by Jaipur’s dedicated fitness community in Malviya Nagar.</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="eyebrow">About Lifetime Fitness Club</span>
+        <h2 class="section-title">Where You Come First... <span>Forever.</span></h2>
+        <p>
+          Located at 3rd Floor, V Cube, Opposite Gaurav Tower Marg in the heart of Malviya Nagar, Jaipur, <strong>Lifetime Fitness Club</strong> was built to redefine what a modern strength and conditioning club feels like.
+        </p>
+        <p>
+          Whether you are stepping onto the gym floor for the very first time or refining peak athletic performance, our environment combines commercial-grade biomechanics, structured training guidance, and an energized community that keeps you consistent for life.
+        </p>
+
+        <div class="about-pillars">
+          <div class="pillar-item">
+            <div class="pillar-dot">✓</div>
+            <div>
+              <strong>Member-First Culture</strong>
+              <span>Personalized attention from day one</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-dot">✓</div>
+            <div>
+              <strong>Precision Equipment</strong>
+              <span>Curated machines &amp; free weights</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-dot">✓</div>
+            <div>
+              <strong>Hygienic Sanctuary</strong>
+              <span>Sanitized floors &amp; fresh air flow</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-dot">✓</div>
+            <div>
+              <strong>Prime Jaipur Access</strong>
+              <span>Opposite Gaurav Tower Marg</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#facilities" class="btn btn-outline">Explore Our Facilities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Facilities & Training Services -->
+  <section class="section section-dark" id="facilities">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">Facilities &amp; Services</span>
+        <h2 class="section-title">Engineered For <span>Total Transformation</span></h2>
+        <p class="section-subtitle">
+          Every square foot of Lifetime Fitness Club is purpose-built to support strength, endurance, mobility, and recovery under one roof.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12"/></svg>
+          </div>
+          <h3>Strength &amp; Hypertrophy Zone</h3>
+          <p>Competition-grade squat racks, calibrated dumbbells, Olympic barbells, and selectorized isolation machines designed for safe progressive overload.</p>
+          <div class="service-tags">
+            <span class="service-tag">Free Weights</span>
+            <span class="service-tag">Plate-Loaded</span>
+            <span class="service-tag">Power Racks</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Cardio &amp; Endurance Arena</h3>
+          <p>High-performance treadmills, ellipticals, rowers, and spin cycles equipped with performance tracking for fat loss and cardiovascular conditioning.</p>
+          <div class="service-tags">
+            <span class="service-tag">HIIT Ready</span>
+            <span class="service-tag">Heart-Rate Zones</span>
+            <span class="service-tag">Stamina</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>1-on-1 Personal Training</h3>
+          <p>Dedicated coaching tailored to your body composition, injury history, and timeline — with form correction, programming, and accountability.</p>
+          <div class="service-tags">
+            <span class="service-tag">Custom Plans</span>
+            <span class="service-tag">Body Recomp</span>
+            <span class="service-tag">Form Coaching</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Functional &amp; Turf Conditioning</h3>
+          <p>Dedicated functional zone featuring kettlebells, battle ropes, medicine balls, plyo boxes, and agility equipment for athletic power.</p>
+          <div class="service-tags">
+            <span class="service-tag">Core Power</span>
+            <span class="service-tag">Agility</span>
+            <span class="service-tag">MetCon</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Transformation &amp; Nutrition Guidance</h3>
+          <p>Sustainable lifestyle strategies combining structured training blocks with practical nutrition habits tailored for busy schedules.</p>
+          <div class="service-tags">
+            <span class="service-tag">Fat Loss</span>
+            <span class="service-tag">Lean Muscle</span>
+            <span class="service-tag">Check-Ins</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Luxury Locker &amp; Member Lounge</h3>
+          <p>Clean, modern changing rooms, secure storage lockers, hydration access, and welcoming front-desk hospitality before and after every session.</p>
+          <div class="service-tags">
+            <span class="service-tag">Sanitized</span>
+            <span class="service-tag">Lockers</span>
+            <span class="service-tag">Climate Control</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Membership Plans (Clearly Labelled Demo Prices) -->
+  <section class="section section-charcoal" id="plans">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">Membership Plans</span>
+        <h2 class="section-title">Invest In Your <span>Strongest Self</span></h2>
+        <p class="section-subtitle">
+          Flexible membership tiers structured for consistency. Visit our Malviya Nagar desk or submit an enquiry for current seasonal offers.
+        </p>
+        <div class="demo-notice">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Indicative Demo Pricing Shown — Confirm Official Rates at Reception
+        </div>
+      </div>
+
+      <div class="plans-grid">
+        <div class="plan-card reveal">
+          <div>
+            <span class="plan-demo-pill">Demo Price</span>
+            <h3 class="plan-name">Monthly Momentum</h3>
+            <p class="plan-desc">Ideal for visitors or anyone starting their routine with full floor access.</p>
+            <div class="plan-price">
+              <span class="currency">₹</span>
+              <span class="amount">2,999</span>
+              <span class="period">/ month (Demo)</span>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Full Strength &amp; Cardio Floor Access
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Initial Fitness Assessment
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Locker &amp; Changing Facilities
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                General Floor Trainer Support
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline select-plan-btn" data-plan="Monthly Momentum (Demo ₹2,999/mo)" style="width:100%;">Enquire This Plan</button>
+        </div>
+
+        <div class="plan-card featured reveal">
+          <div class="plan-badge">Most Popular</div>
+          <div>
+            <span class="plan-demo-pill">Demo Price</span>
+            <h3 class="plan-name">Annual Lifetime Pro</h3>
+            <p class="plan-desc">Our signature 12-month commitment for maximum value and lasting results.</p>
+            <div class="plan-price">
+              <span class="currency">₹</span>
+              <span class="amount">17,999</span>
+              <span class="period">/ year (Demo)</span>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Unlimited All-Zone Club Access
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Quarterly Body Composition Check-Ins
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Customized Starter Workout Split
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Priority Locker &amp; Guest Pass Privileges
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Functional &amp; Conditioning Zone Access
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-primary select-plan-btn" data-plan="Annual Lifetime Pro (Demo ₹17,999/yr)" style="width:100%;">Claim Annual Offer</button>
+        </div>
+
+        <div class="plan-card reveal">
+          <div>
+            <span class="plan-demo-pill">Demo Price</span>
+            <h3 class="plan-name">Quarterly Transformation</h3>
+            <p class="plan-desc">90-day structured membership built to lock in habits and visible progress.</p>
+            <div class="plan-price">
+              <span class="currency">₹</span>
+              <span class="amount">7,499</span>
+              <span class="period">/ 3 months (Demo)</span>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Full Strength, Cardio &amp; Turf Access
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Goal-Oriented Training Roadmap
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Nutritional Habit Orientation
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Optional Personal Training Add-On
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline select-plan-btn" data-plan="Quarterly Transformation (Demo ₹7,499/3mo)" style="width:100%;">Enquire This Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Photo Gallery -->
+  <section class="section section-dark" id="gallery">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">Club Atmosphere</span>
+        <h2 class="section-title">Inside <span>Lifetime Fitness Club</span></h2>
+        <p class="section-subtitle">
+          A curated look at the luxury dark aesthetic, precision equipment zones, and focused training energy.
+        </p>
+      </div>
+
+      <div class="gallery-filters reveal" role="tablist" aria-label="Gallery Categories">
+        <button class="filter-btn active" data-filter="all">All Zones</button>
+        <button class="filter-btn" data-filter="strength">Strength Floor</button>
+        <button class="filter-btn" data-filter="cardio">Cardio &amp; HIIT</button>
+        <button class="filter-btn" data-filter="coaching">Personal Training</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-category="strength" tabindex="0" role="button" aria-label="Preview Precision Dumbbell and Rack Bay">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" alt="Free weights and strength floor" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Strength Floor</span>
+            <h4>Precision Dumbbell &amp; Rack Bay</h4>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="cardio" tabindex="0" role="button" aria-label="Preview Endurance Conditioning Arena">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Cardio conditioning row" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Cardio &amp; HIIT</span>
+            <h4>Endurance Conditioning Arena</h4>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="coaching" tabindex="0" role="button" aria-label="Preview 1-on-1 Form and Progression">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Coach guiding an athlete" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Personal Training</span>
+            <h4>1-on-1 Form &amp; Progression</h4>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="strength" tabindex="0" role="button" aria-label="Preview Olympic Lifting and Compound Zone">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Barbell lifting session" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Strength Floor</span>
+            <h4>Olympic Lifting &amp; Compound Zone</h4>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="cardio" tabindex="0" role="button" aria-label="Preview Functional and Turf Conditioning">
+          <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=80" alt="Modern functional gym studio" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Cardio &amp; HIIT</span>
+            <h4>Functional &amp; Turf Conditioning</h4>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="coaching" tabindex="0" role="button" aria-label="Preview Goal-Driven Transformation Coaching">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80" alt="Focused strength workout" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Personal Training</span>
+            <h4>Goal-Driven Transformation Coaching</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Gallery Preview">&times;</button>
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox-caption">
+        <div>
+          <span id="lightboxCat" style="font-size:0.75rem; color:var(--electric-blue); text-transform:uppercase; font-weight:700; letter-spacing:0.1em;"></span>
+          <h4 id="lightboxTitle" style="margin-top:4px;"></h4>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="min-height:40px; padding:10px 20px; font-size:0.75rem;" id="lightboxCta">Visit Club</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Why Choose Us -->
+  <section class="section section-charcoal" id="why-us">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">The Lifetime Standard</span>
+        <h2 class="section-title">Why Jaipur Trains <span>With Us</span></h2>
+        <p class="section-subtitle">
+          A 4.9-star reputation across 755 reviews is earned daily through consistency, hospitality, and uncompromising standards.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-number">01</div>
+          <h3>4.9★ Proven Excellence</h3>
+          <p>Backed by 755 Google reviews, making Lifetime Fitness Club one of the highest-rated fitness destinations in Malviya Nagar.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-number">02</div>
+          <h3>Uncluttered Pro Layout</h3>
+          <p>Thoughtfully zoned floor plans keep strength, cardio, and functional training seamless even during peak evening hours.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-number">03</div>
+          <h3>Supportive Coaching</h3>
+          <p>Approachable trainers who prioritize safe biomechanics, sustainable progression, and genuine member encouragement.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-number">04</div>
+          <h3>Prime V Cube Location</h3>
+          <p>Conveniently positioned opposite Gaurav Tower Marg in Malviya Nagar with effortless access across South Jaipur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Google Rating & Member Experience Section -->
+  <section class="section section-dark" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Reputation &amp; Feedback</span>
+        <h2 class="section-title">Rated <span>4.9 Stars</span> By 755 Reviewers</h2>
+        <p class="section-subtitle">
+          Verified Google rating summary for Lifetime Fitness Club, Malviya Nagar, Jaipur. Below are clearly labelled sample experience highlights representing common reasons members choose our club.
+        </p>
+      </div>
+
+      <div class="reviews-layout">
+        <div class="google-summary-card reveal">
+          <div class="google-brand-row">
+            <span class="google-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              Google Rating
+            </span>
+            <span style="font-size:0.78rem; color:var(--electric-blue); font-weight:600;">Verified Score</span>
+          </div>
+
+          <div class="score-display">
+            <div class="score-num">4.9</div>
+            <div>
+              <div class="score-stars">★★★★★</div>
+              <div class="score-count">Based on <strong>755 Google reviews</strong></div>
+            </div>
+          </div>
+
+          <div class="rating-bars" aria-label="Rating overview">
+            <div class="rating-bar-row">
+              <span>5★</span>
+              <div class="bar-track"><div class="bar-fill" style="width:94%;"></div></div>
+              <span>94%</span>
+            </div>
+            <div class="rating-bar-row">
+              <span>4★</span>
+              <div class="bar-track"><div class="bar-fill" style="width:5%;"></div></div>
+              <span>5%</span>
+            </div>
+            <div class="rating-bar-row">
+              <span>3★</span>
+              <div class="bar-track"><div class="bar-fill" style="width:1%;"></div></div>
+              <span>1%</span>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Lifetime+Fitness+Club+V+Cube+Malviya+Nagar+Jaipur" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;">
+            Read Live Reviews on Google
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="reviews-cards-grid">
+          <article class="review-card reveal">
+            <div>
+              <div class="review-top">
+                <span class="review-stars">★★★★★</span>
+                <span class="review-sample-tag">Sample Highlight</span>
+              </div>
+              <h4 style="margin-top:12px;">Cleanliness &amp; Modern Machines</h4>
+              <p>“Example preview card: Well-maintained equipment, clean training floors, and comfortable climate control that make daily workouts effortless.”</p>
+            </div>
+            <div class="review-footer">
+              <span>Demo Placeholder Card</span>
+              <span>Strength Zone</span>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div>
+              <div class="review-top">
+                <span class="review-stars">★★★★★</span>
+                <span class="review-sample-tag">Sample Highlight</span>
+              </div>
+              <h4 style="margin-top:12px;">Attentive Coaching Support</h4>
+              <p>“Example preview card: Trainers take time to guide beginners on proper posture while pushing experienced lifters toward new milestones.”</p>
+            </div>
+            <div class="review-footer">
+              <span>Demo Placeholder Card</span>
+              <span>Personal Training</span>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div>
+              <div class="review-top">
+                <span class="review-stars">★★★★★</span>
+                <span class="review-sample-tag">Sample Highlight</span>
+              </div>
+              <h4 style="margin-top:12px;">Motivating Energy &amp; Vibe</h4>
+              <p>“Example preview card: Positive, respectful gym culture in Malviya Nagar where everyone stays focused and welcoming.”</p>
+            </div>
+            <div class="review-footer">
+              <span>Demo Placeholder Card</span>
+              <span>Club Community</span>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div>
+              <div class="review-top">
+                <span class="review-stars">★★★★★</span>
+                <span class="review-sample-tag">Sample Highlight</span>
+              </div>
+              <h4 style="margin-top:12px;">Convenient GT Marg Access</h4>
+              <p>“Example preview card: Easy to reach opposite Gaurav Tower Marg, making morning or post-work training sessions easy to stick with.”</p>
+            </div>
+            <div class="review-footer">
+              <span>Demo Placeholder Card</span>
+              <span>Malviya Nagar</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 & 9. Contact Form & Google Maps Directions -->
+  <section class="section section-charcoal" id="contact">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">Visit Or Enquire</span>
+        <h2 class="section-title">Start Your Journey <span>Today</span></h2>
+        <p class="section-subtitle">
+          Drop by our club at 3rd Floor, V Cube, Opposite Gaurav Tower Marg, or send an enquiry below to book a guided walkthrough.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-card reveal">
+          <h3 style="font-size:1.4rem; margin-bottom:6px;">Membership &amp; Tour Enquiry</h3>
+          <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:24px;">
+            Demo enquiry form — submit your fitness goal and preferred plan below.
+          </p>
+
+          <form id="enquiryForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Your full name" autocomplete="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phoneInput">Phone Number *</label>
+                <input type="tel" id="phoneInput" class="form-control" placeholder="10-digit mobile number" autocomplete="tel" inputmode="tel" required />
+              </div>
+
+              <div class="form-group">
+                <label for="goalSelect">Primary Fitness Goal</label>
+                <select id="goalSelect" class="form-control">
+                  <option value="Strength & Muscle Building">Strength &amp; Muscle Building</option>
+                  <option value="Fat Loss & Conditioning">Fat Loss &amp; Conditioning</option>
+                  <option value="Personal Training">1-on-1 Personal Training</option>
+                  <option value="General Fitness & Mobility">General Fitness &amp; Mobility</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="planSelect">Interested Plan (Demo)</label>
+                <select id="planSelect" class="form-control">
+                  <option value="Club Tour / Undecided">Book a Club Tour First</option>
+                  <option value="Monthly Momentum (Demo ₹2,999/mo)">Monthly Momentum (Demo ₹2,999/mo)</option>
+                  <option value="Annual Lifetime Pro (Demo ₹17,999/yr)">Annual Lifetime Pro (Demo ₹17,999/yr)</option>
+                  <option value="Quarterly Transformation (Demo ₹7,499/3mo)">Quarterly Transformation (Demo ₹7,499/3mo)</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="messageInput">Preferred Visit Time or Message</label>
+                <textarea id="messageInput" class="form-control" placeholder="Share your preferred workout time (Morning / Evening) or any questions..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Submit Enquiry
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="location-panel reveal">
+          <div class="location-info-card">
+            <div class="info-row">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Club Address</strong>
+                <p>3rd Floor, V Cube, Plot No. 1–6, Opp. Gaurav Tower Marg, Malviya Nagar, Jaipur, Rajasthan 302017, India</p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <strong>Google Rating</strong>
+                <p>4.9 Stars across 755 Verified Reviews · Malviya Nagar, Jaipur</p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Club Visit &amp; Reception</strong>
+                <p>Walk-in tours welcome at V Cube 3rd Floor. Contact the front desk directly at the club for official batch &amp; holiday schedules.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe
+              title="Google Maps Location — Lifetime Fitness Club, Malviya Nagar, Jaipur"
+              src="https://maps.google.com/maps?q=Lifetime%20Fitness%20Club%20V%20Cube%20Opp.%20Gaurav%20Tower%20Marg%20Malviya%20Nagar%20Jaipur%20302017&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-footer-bar">
+              <span>V Cube, Opp. Gaurav Tower Marg, Malviya Nagar</span>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=3rd+Floor+V+Cube+Plot+1-6+Opp+Gaurav+Tower+Marg+Malviya+Nagar+Jaipur+Rajasthan+302017"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                style="min-height:40px; padding:10px 18px; font-size:0.75rem;">
+                Get Directions
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <div class="brand-mark">
+              <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="17" cy="21" r="11" stroke="#f8fafc" stroke-width="2.2" stroke-dasharray="44 18"/>
+                <path d="M17 10V6M14 6H20M25 13L27.5 10.5" stroke="#1fc2ff" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M17 21V15.5M17 21H21.5" stroke="#1fc2ff" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="30" cy="14" r="2.2" fill="#1fc2ff"/>
+                <path d="M29.5 17.5L26 22L30 25L27.5 32M29.5 17.5L34 20.5M29.5 17.5L25 19" stroke="#1fc2ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <div class="brand-title"><span class="blue">LIFETIME</span> <span class="white">FITNESS CLUB</span></div>
+              <div class="brand-tagline"><span>WHERE YOU COME FIRST...</span> FOREVER</div>
+            </div>
+          </a>
+          <p>
+            Malviya Nagar’s premier destination for strength training, endurance conditioning, and personal transformation. Rated 4.9★ across 755 Google reviews.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About The Club</a></li>
+            <li><a href="#facilities">Facilities &amp; Services</a></li>
+            <li><a href="#plans">Membership Plans</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#reviews">4.9★ Google Reviews</a></li>
+            <li><a href="#contact">Book Free Tour</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Location</h4>
+          <p class="footer-address">
+            3rd Floor, V Cube, Plot No. 1–6,<br />
+            Opp. Gaurav Tower Marg,<br />
+            Malviya Nagar, Jaipur,<br />
+            Rajasthan 302017, India
+          </p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=3rd+Floor+V+Cube+Plot+1-6+Opp+Gaurav+Tower+Marg+Malviya+Nagar+Jaipur+Rajasthan+302017" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; color:var(--electric-blue); font-size:0.86rem; font-weight:600; min-height:36px;">
+            Open in Google Maps &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="yearSpan"></span> Lifetime Fitness Club, Jaipur. All rights reserved.</span>
+        <span>Demo membership rates &amp; sample review highlights displayed for preview purposes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Dynamic Footer Year
+      document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+      // Sticky Navbar
+      const navbar = document.getElementById('navbar');
+      const handleScroll = () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      // Mobile Menu Drawer
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileOverlay = document.getElementById('mobileOverlay');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-list a, #mobileCtaBtn');
+
+      function toggleMenu(forceClose = false) {
+        const isOpen = forceClose ? false : !mobileMenu.classList.contains('open');
+        mobileMenu.classList.toggle('open', isOpen);
+        mobileOverlay.classList.toggle('open', isOpen);
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      }
+
+      hamburger.addEventListener('click', () => toggleMenu());
+      mobileOverlay.addEventListener('click', () => toggleMenu(true));
+      mobileLinks.forEach((link) => link.addEventListener('click', () => toggleMenu(true)));
+
+      // Intersection Observer for Scroll Reveals (with fallback for older browsers)
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('visible'));
+      }
+
+      // Active Nav Link Highlighting
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      if ('IntersectionObserver' in window) {
+        const navObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach((a) => {
+                  a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+                });
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        sections.forEach((sec) => navObserver.observe(sec));
+      }
+
+      // Gallery Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          galleryItems.forEach((item) => {
+            const match = filter === 'all' || item.dataset.category === filter;
+            item.classList.toggle('hidden', !match);
+          });
+        });
+      });
+
+      // Lightbox Preview (Click + Keyboard)
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCat = document.getElementById('lightboxCat');
+      const lightboxTitle = document.getElementById('lightboxTitle');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxCta = document.getElementById('lightboxCta');
+
+      function openLightbox(item) {
+        const img = item.querySelector('img');
+        const cat = item.querySelector('.gallery-overlay span').textContent;
+        const title = item.querySelector('.gallery-overlay h4').textContent;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCat.textContent = cat;
+        lightboxTitle.textContent = title;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      galleryItems.forEach((item) => {
+        item.addEventListener('click', () => openLightbox(item));
+        item.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openLightbox(item);
+          }
+        });
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxCta.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (lightbox.classList.contains('open')) closeLightbox();
+          if (mobileMenu.classList.contains('open')) toggleMenu(true);
+        }
+      });
+
+      // Plan Selection Pre-fills Enquiry Form
+      const planSelect = document.getElementById('planSelect');
+      const selectPlanBtns = document.querySelectorAll('.select-plan-btn');
+
+      selectPlanBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          planSelect.value = btn.dataset.plan;
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          setTimeout(() => {
+            document.getElementById('fullName').focus({ preventScroll: true });
+          }, 550);
+        });
+      });
+
+      // Enquiry Form Validation & Feedback
+      const enquiryForm = document.getElementById('enquiryForm');
+      const formFeedback = document.getElementById('formFeedback');
+
+      enquiryForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('fullName').value.trim();
+        const phone = document.getElementById('phoneInput').value.trim();
+        const goal = document.getElementById('goalSelect').value;
+        const plan = document.getElementById('planSelect').value;
+
+        if (!name || phone.replace(/\D/g, '').length < 10) {
+          formFeedback.style.background = 'rgba(239, 68, 68, 0.14)';
+          formFeedback.style.borderColor = 'rgba(239, 68, 68, 0.45)';
+          formFeedback.style.color = '#fecaca';
+          formFeedback.textContent = 'Please enter your full name and a valid 10-digit phone number.';
+          formFeedback.classList.add('show');
+          return;
+        }
+
+        formFeedback.style.background = 'rgba(16, 185, 129, 0.12)';
+        formFeedback.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+        formFeedback.style.color = '#a7f3d0';
+        formFeedback.textContent = '';
+        const strongName = document.createElement('strong');
+        strongName.textContent = `Thank you, ${name}! `;
+        const bodyText = document.createTextNode(
+          `Your demo enquiry for ${plan} (Goal: ${goal}) has been recorded. Visit us at 3rd Floor, V Cube, Opp. Gaurav Tower Marg, Malviya Nagar, Jaipur for a guided club walkthrough.`
+        );
+        formFeedback.appendChild(strongName);
+        formFeedback.appendChild(bodyText);
+        formFeedback.classList.add('show');
+        enquiryForm.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
